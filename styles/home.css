@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    list-style: none;
+}
+
+header, main{
+    width: 100%; 
+}
+
+.container {
+    max-width: 100px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centralizar na horizontal */
+    padding: 0 20px; /* Adiciona espaço nas laterais */
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 20px 0; 
+}
+
+.search-items-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 12.5em;
+}
+
+.logo a {
+    font-family: 'Pecita', sans-serif;
+    font-size: 45px;
+    color: black;
+    transition: transform 0.10s ease; /* Adiciona uma transição suave */
+}
+
+.logo a:hover {
+    color: #7B9E1A;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.icon-search img {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+.icon-search input[type="text"] {
+    padding-left: 40px; 
+    width: 573px; 
+    border-radius: 30px;
+    background-color: #F6F6F6;
+    border-style: none;
+    height: 40px;
+}
+
+.icon-search input[placeholder="O que você está procurando?"] {
+    font-size: 17px;
+}
+
+
+.nav-blog h4{
+    color: #669407;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.nav-blog h4:hover{
+    color: #cae09d;
+}
+
+.nav-itens{
+    display: flex;
+    align-items: center;
+}
+
+.botao-carrinho{
+    position: relative;
+    display: inline-block;
+    margin-left: 4px;
+}
+
+.num-carrinho {
+    background-color: #E0FF8B;
+    color: rgb(0, 0, 0);
+    border: solid 1px black;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 30px; 
+    height: 30px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.carri-icon img:hover {
+    content: url(/images/icons/vector-filled.svg);
+}
+
+.nav-itens .like a{
+    margin-right: 50px;
+}
+
+.login .login-btn {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 12px 30px; 
+    border-radius: 50px;
+    border: solid 1px black;
+}
+
+.login .login-btn:hover {
+    background-color: #E0FF8B;
+    color: black;
+    border: solid 1px black;
+    cursor: pointer;
+}
+
+.like img{
+    transition: content 0.3s ease; 
+}
+
+.like img:hover {
+    content: url(/images/icons/like-preenchido.svg);
+}
+
+.header-navbar {
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px 40px 20px;
+}
+
+.header-navbar ul {
+    display: flex; 
+}
+
+.header-navbar li {
+    margin: 0 40px; 
+    font-size: 20px;
+}
+
+.header-navbar li a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-navbar li a:hover {
+    color: #669407;
+}
+
+.container-header{
+    display: flex;
+    justify-content: center;
+}
+
+.container-header .anun-rochele{
+    padding-right: 10px;
+    transition: opacity 0.8s ease;
+}
+
+.container-header .anun-rochele:hover{
+    opacity: 80%;
+}
+
+.anuncio2 {
+    position: relative;
+}
+
+.btn-compre {
+    position: absolute;
+    top: 80%;
+    right: 70%; 
+    transform: translateY(-50%); 
+    background-color:  #E0FF8B; 
+    color: rgb(0, 0, 0); 
+    border: solid 1px black;
+    padding: 50px 33px; 
+    border-radius: 100px; 
+    cursor: pointer; 
+    transition: padding 0.7s ease;
+}
+
+.btn-compre:hover{
+    padding: 65px 36px;
+    background-color: #e4ff98;
+}
+
+.btn-compre h3{
+    text-align: center;
+}
+
+main{
+    background-color: rgb(255, 255, 255);
+}
+
+.novidades {
+    align-items: center; 
+    text-align: left; 
+}
+
+.novidades h1 {
+    font-size: 40px;
+    margin-bottom: 20px; 
+    margin-right: auto;
+    padding-left: 5em;
+    padding-top: 1.5em;
+}
+
+.noticias {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: flex-start; /* Alinha os itens verticalmente no topo */
+    margin-top: 30px;
+}
+
+.noticias img {
+    margin: 10px;
+    max-width: 100%;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.noticias img:hover{
+    opacity: 70%;
+}
+
+.noticias .new3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left; 
+    max-width: 350px;
+    cursor: pointer;
+}
+
+.noticias .new3 .titulo-new{
+    margin: 10px 0;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 600 ;
+}
+
+.noticias .new3 .descricao{
+    padding-left: 20px;
+    font-size: 13px;
+    color: #999999;
+}
+
+.mais-vendidos h1{
+    display: flex;
+    font-size: 40px;
+    margin-bottom: 10px; 
+    margin-right: auto;
+    padding-left: 5em;
+    padding-top: 80px;
+}
+
+.mais-vendidos .titulo-prod p{
+    padding-left: 13px;
+    color: white;
+    -webkit-text-stroke: 2.5px #7B9E1A; 
+    -webkit-text-fill-color: transparent; 
+}
+
+.produtos {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    overflow: hidden; 
+}
+
+.produto1 {
+    margin-right: 20px;
+    padding: 33px 20px;
+}
+
+.produto1 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto1:hover {
+    transform: scale(1.05); 
+}
+
+
+
+.img-prod{
+    display: flex;
+    justify-content: center;
+}
+
+.nome-prod p {
+    max-width: 90%;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+    word-break: break-word;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 30px 0px 20px 15px;
+    color: #000;
+}
+
+.nome-prod p:hover {
+    color: #669407;
+}
+
+.nome-prod span{
+    font-size: 12px;
+    text-align: left;
+    padding: 33px 20px;
+}
+
+.preco-prod p{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    padding: 20px 0px 0px 15px;
+    color: #251F2B;
+}
+
+.preco-prod span{
+    font-size: 12px;
+    text-align: left;
+    padding: 20px 0px 0px 15px;
+    color: #251F2B;
+}
+
+.banner1{
+    display: flex;
+    justify-content: center;
+    margin-top: 57px;
+}
+
+.banner1 img{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.banner1 img:hover{
+    opacity: 70%;
+}
+
+.em-promocao h1{
+    display: flex;
+    font-size: 40px;
+    margin-bottom: 20px; 
+    margin-right: auto;
+    padding-left: 5em;
+    padding-top: 80px;
+}
+
+.em-promocao .titulo-prod p{
+    padding-left: 13px;
+    color: white;
+    -webkit-text-stroke: 2.5px #aebe53; 
+    -webkit-text-fill-color: rgb(255, 255, 255); 
+}
+
+footer {
+    position: relative; /* vai ser relativo ao social, pra que ele fique nele */
+    margin-top: 130px;
+}
+
+.social-all {
+    position: absolute;
+    top: -50px; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; 
+}
+
+.social{
+    background-color: #E0FF8B;
+    box-shadow: -7px -7px rgba(223, 222, 222, 0.493);
+    border-radius: 70px;
+    padding: 40px;
+    width: 1071px;
+}
+
+.social-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-container p{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.social-icons a{
+    margin: 10px;
+    transition: transform 0.10s ease; 
+}
+
+.social-icons img:hover{
+    transform: scale(1.10); 
+}
+
+.footer-background{
+    background-color: #251F2B;
+    padding: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer-content{
+    margin-top: 6em;
+    display: flex;
+    justify-content: space-between;
+    width: 1313px;
+}
+
+.footer-content .titulo{
+    color: #fff;
+}
+
+.footer-content .marca{
+    color: #fff;
+}
+
+.footer-content a{  
+    color: aliceblue;
+}
+
+.footer-content .titulo{
+    margin-bottom: 20px;
+}
+
+.opcoes ul li a{
+    color: #999999;
+}
+
+.opcoes ul li{
+    margin-top: 5px;
+}
+
+.opcoes ul li a:hover{
+    color: #ffff;
+}
+
+.info ul li{
+    color: #999999;
+}
+
+.marca h1{
+    font-family: 'Pecita', sans-serif;
+    font-size: 45px;
+    font-weight: 100;
+}
+
+.copyright{
+    background-color: black;
+    padding: 20px;
+}
+
+.copyright p{
+    color: rgb(146, 146, 146);
+    display: flex;
+    justify-content: center;
+}

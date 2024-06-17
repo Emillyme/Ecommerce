@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivone</title>
+    <!-- Link para o ícone do site -->
+    <link rel="icon" href="">
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script type="module" src="./scripts/checkout.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- Barra de itens de busca -->
+        <section class="search-items-bar">
+            <!-- Logotipo -->
+            <div class="logo"><a href="index.html">Ivone</a></div>
+            <!-- Barra de busca -->
+            <div class="search-bar">
+                <div class="icon-search">
+                    <!-- Ícone de busca -->
+                    <a href=""><img src="./images/icons/search_icon.png" alt="Ícone de busca"></a>
+                    <!-- Campo de entrada de texto para busca -->
+                    <input type="text" placeholder="O que você está procurando?">
+                </div>
+            </div>
+            <!-- Link para a seção "Sobre nós" -->
+            <div class="nav-blog">
+                <a href="sobre.html"><h4>Sobre nós</h4></a>
+            </div>
+            <!-- Ícones de navegação (curtida, carrinho, etc.) -->
+            <div class="nav-itens">
+                <div class="like">
+                    <a href=""><img src="./images/icons/like.svg" alt="Ícone de curtida"></a>
+                </div>
+                <div class="carri-icon">
+                    <a href="./produtos-carrinho.html"><img src="./images/icons/Vector.png" alt="Ícone do carrinho"></a>
+                </div>
+                <div class="botao-carrinho">
+                    <!-- Número de itens no carrinho -->
+                    <p class="num-carrinho">9+</p>
+                </div>
+            </div>
+            <!-- Botão de login -->
+            <div class="login">
+                <a href="#" class="login-btn">LOGIN</a>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- REDIRECIONAMENTO DE PÁGINAS -->
+        <div class="redirecionar">
+            <!-- Ícone de seta -->
+            <img src="./images/icons/arrow-esquerda.png" alt="">
+            <!-- Link para voltar -->
+            <h5><a href="index.html">VOLTAR</a></h5> <!-- Mudar para a página anterior acessada do usuário -->
+        </div>
+        <section class="cart-container"> 
+            <!-- Título do carrinho -->
+            <h2 class="titulo">SEU CARRINHO</h2>
+            <!-- Tabela de itens do carrinho -->
+            <div class="grid">
+                <table>
+                    <tr id="checkout">
+                        
+                    </tr>
+                </table>
+                <div class="total-conteiner1">                 
+                    <!-- Título "Total" -->
+                    <h1 class="total">Total</h1>
+                    <div class="cart-summary">
+                        <!-- Informações sobre o subtotal, frete e total -->
+                        <p>Frete: <span></span></p>
+                        <p>Subtotal: <span>R$ </span></p>
+                        <p class="total-inteiro">Total: <span>R$</span></p>
+                        
+                        <!-- Campo de entrada de texto para o cálculo do frete -->
+                        <div class="frete-produto"> <!-- Frete já aparece calculado no total assim que o usuário coloca -->
+                            <p>Cálculo de Frete</p>
+                            <input type="text" name="" id="" class="frete" placeholder="Digite seu CEP aqui...">
+                        </div>
+                        <!-- Botão para ir para a página de pagamento -->
+                        <a href="./chekout.html"><button class="checkout-btn">IR PARA PAGAMENTOS</button></a>
+                        <!-- Link para continuar comprando -->
+                        <a href="/produtos.html" class="continue-link">
+                            <img src="./images/icons/arrow-esquerda.png" alt="">
+                            CONTINUAR COMPRANDO
+                        </a>
+                    </div>   
+                </div>
+
+            </div>
+            
+                    
+        </section>
+    </main>
+    <footer>
+        <!-- Seção de redes sociais -->
+        <div class="social-all">
+            <div class="social">
+                <div class="social-container">
+                    <p>Veja nossas redes sociais para ter promoções e atualizações: </p>
+                    <!-- Ícones das redes sociais -->
+                    <div class="social-icons">
+                        <a href=""><img src="./images/icons/Instagram.png" alt=""></a>
+                        <a href=""><img src="./images/icons/Facebook.png" alt=""></a>
+                        <a href=""><img src="./images/icons/PlayStation.png" alt=""></a>
+                        <a href=""><img src="./images/icons/TwitterX.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Seção do rodapé -->
+        <div class="footer-background">
+            <div class="footer-content">
+                <!-- Marca do site -->
+                <div class="marca">
+                    <h1>Ivone</h1>
+                </div>
+                <!-- Navegação do rodapé -->
+                <div class="footer-navegacao">
+                    <div class="titulo">
+                        <h3>NAVEGAÇÃO</h3>
+                    </div>
+                    <div class="opcoes">
+                        <ul>
+                            <!-- Links de navegação -->
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Beleza</a></li>
+                            <li><a href="">SkinCare</a></li>
+                            <li><a href="">Séruns</a></li>
+                            <li><a href="">Todos os produtos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-blog">
+                    <div class="titulo">
+                        <h3>NOSSO BLOG</h3>
+                    </div>
+                    <div class="opcoes">
+                        <ul>
+                            <li><a href="">Recentes</a></li>
+                            <li><a href="">Sobre nós</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-contato">
+                    <div class="titulo">
+                        <h3>CONTATO</h3>
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li>ivone@gmail.com</li>
+                            <li>+55 19 1234567890</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2024 Copyright, Emilly Rodrigues de Mello</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

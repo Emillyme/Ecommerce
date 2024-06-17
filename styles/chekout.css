@@ -1,0 +1,105 @@
+.payment {
+    padding:10px 0px
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0px;
+    width:100%
+}
+
+.form-field label {
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+
+.form-field input, select{
+    padding:10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #e4e4e4;
+}
+
+.form-field.cep,.form-field.uf{
+    width: 20%;
+}
+
+
+.form-group {
+    column-gap: 16px;
+}
+
+.pay-method input{
+    width: 100%;
+}
+
+.cvv{
+    width: 20%;
+}
+
+.val{
+    width: 30%;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    column-gap: 16px;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.grid_col_1 {
+    grid-area: col1;
+    padding: 35px;
+}
+
+.grid_col_2 {
+    grid-area: col2;
+    padding: 25px;
+    background-color: #eff3ea;
+    border-radius: 20px;
+}
+
+
+#product_page, #billing{
+    display: grid;
+    column-gap: 42px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "col1 col2";
+}
+
+
+.total-conteiner{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.text-container h2{
+    font-weight: 400;
+}
+
+.text-container .main-text{
+    font-size: 30px;
+    border-bottom: 1px solid #a8d836;
+    width: 400px;
+    text-align: center;
+    padding-left: 13px;
+    color: #a5b60d;
+}

@@ -1,0 +1,182 @@
+.payment-container{
+    width: 70%;
+    
+}
+
+.cart-container .titulo{
+  margin-top: 40px;
+  font-size: 40px;
+  font-weight: 300; 
+  display: flex;
+  justify-content: left; 
+}
+
+.cart-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.cart-container td{
+    width: 60%;
+    padding: 30px;
+}
+
+.cart-container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.titulo h1{
+    display: flex;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.item-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-details h3 {
+    font-size: 18px;
+    max-width: 55%;
+    font-weight: 400;
+}
+
+.controle-quatidade {
+    display: flex;
+    align-items: center;
+}
+
+.controle-quatidade button {
+    background-color: #E0FF8B;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.controle-quatidade .quantidade {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.controle-quatidade button:active{
+    background-color: rgb(143, 226, 91);
+}
+
+.preco {
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+}
+
+.remover-item{
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 50px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.remover-item:hover{
+    color: #b94646;
+}
+
+.cart-summary p {
+    margin: 10px 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    border: black solid 0.1px ;
+    transition:0.3s;
+}
+
+.checkout-btn:hover{
+    background-color: #eaffb1;
+    border: black solid 0.1px ;
+    color: black;
+}
+
+.continue-link{
+    color: #7c7c7c;
+    font-weight: 300;
+    transition: 0.5s;
+}
+
+.continue-link:hover{
+    color: #75be5e;
+    font-weight: 500;
+}
+
+
+td{
+    padding: 0;
+}
+
+tr{
+    display: flex;
+    flex-direction: column;
+    width: 130%;
+}
+
+.total-conteiner1{
+    width: 50%;
+}
+
+.total-inteiro{
+    font-weight: bold;
+}
+
+.total-conteiner1 h1{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.frete-produto{
+    margin-top: 45px;
+    margin-bottom: 100px;
+}
+
+.frete-produto input{
+    width: 360px;
+}
+
+.total-conteiner .frete-produto input{
+    width: 365px;
+}

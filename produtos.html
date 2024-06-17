@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivone</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script type="module" src="./scripts/products.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- Barra de itens de busca -->
+        <section class="search-items-bar">
+            <!-- Logotipo -->
+            <div class="logo"><a href="index.html">Ivone</a></div>
+            <!-- Barra de busca -->
+            <div class="search-bar">
+                <div class="icon-search">
+                    <!-- Ícone de busca -->
+                    <a href=""><img src="./images/icons/search_icon.png" alt="Ícone de busca"></a>
+                    <!-- Campo de entrada de texto para busca -->
+                    <input type="text" placeholder="O que você está procurando?">
+                </div>
+            </div>
+            <!-- Link para a seção "Sobre nós" -->
+            <div class="nav-blog">
+                <a href="sobre.html"><h4>Sobre nós</h4></a>
+            </div>
+            <!-- Ícones de navegação (curtida, carrinho, etc.) -->
+            <div class="nav-itens">
+                <div class="like">
+                    <a href=""><img src="./images/icons/like.svg" alt="Ícone de curtida"></a>
+                </div>
+                <div class="carri-icon">
+                    <a href="./produtos-carrinho.html"><img src="./images/icons/Vector.png" alt="Ícone do carrinho"></a>
+                </div>
+                <div class="botao-carrinho">
+                    <!-- Número de itens no carrinho -->
+                    <p class="num-carrinho">9+</p>
+                </div>
+            </div>
+            <!-- Botão de login -->
+            <div class="login">
+                <a href="#" class="login-btn">LOGIN</a>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- REDIRECIONAMENTO DE PÁGINAS -->
+        <div class="redirecionar">
+            <h5><a href="index.html">HOME</a></h5>
+            <img src="./images/icons/arrw.png" alt="">
+            <h5>Todos os Produtos</h5>
+        </div>
+
+        <!-- BANNER 1 -->
+        <div class="banner2">
+            <img src="./images/banner2.png" alt="">
+        </div>
+
+        <section class="produtos-container">
+            <!-- Produtos -->
+            <div class="conteiner-produtos">
+                <div class="filtro">
+                    <h3>Filtro de Produtos</h3>
+                    <ul class="filtro-lista">
+                        <li>
+                            <input type="checkbox" id="filtro1" style="display: none;">
+                            <div class="bordr_arrow">
+                                <label for="filtro1" class="arrow-icon">
+                                    <p>Categoria</p>
+                                    <img src="images/icons/star-arrw.png" alt="">
+                                </label>
+                            </div>
+                            <ul class="subfiltro">
+                                <li><b>Skincare</b>
+                                    <ul>
+                                        <li><input type="checkbox" id="subfiltro1"><label for="subfiltro1">Serums</label></li>
+                                        <li><input type="checkbox" id="subfiltro2"><label for="subfiltro2">Creme Facial</label></li>
+                                        <li><input type="checkbox" id="subfiltro3"><label for="subfiltro3">Sabonete</label></li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li><b>Antiacne</b>
+                                    <ul>
+                                        <!-- Subfiltros de Anti-acne -->
+                                        <li><input type="checkbox" id="subfiltro4"><label for="subfiltro4">Ácidos</label></li>
+                                        <li><input type="checkbox" id="subfiltro5"><label for="subfiltro5">Gel Fácial</label></li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li><b>Rejuvenescer </b>
+                                    <ul>
+                                        <!-- Subfiltros de Rejuvenescimento -->
+                                        <li><input type="checkbox" id="subfiltro7"><label for="subfiltro7">Cremes Corporais</label></li>
+                                        <li><input type="checkbox" id="subfiltro8"><label for="subfiltro8">Cremes Fáciais</label></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <br>
+                    <hr></hr>
+                    <br>
+                    <ul class="filtro-lista2">
+                        <div class="bordr_arrow">
+                            <label for="filtro1" class="arrow-icon">
+                                <p>Preços</p>
+                            </label>
+                        </div>
+                        
+                        <input type="text" id="b" placeholder="Mínimo">
+                        --
+                        <input type="text" id="a" placeholder="Máximo">
+                    </ul>
+                </div>
+                <div class="produtos22">
+                    <!-- Primeira linha de produtos -->
+                   
+                        <div class="linha-produtos section-product-grid">
+                        
+                        
+                        
+                        </div> 
+                        
+                        
+                
+
+                    <!-- Segunda linha de produtos -->
+                    
+                        
+                       
+                       
+
+                    <!-- Terceira linha de produtos -->
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-all">
+            <div class="social">
+                <div class="social-container">
+                    <p>Veja nossas redes sociais para ter promoções e atualizações: </p>
+                    <div class="social-icons">
+                        <a href=""><img src="./images/icons/Instagram.png" alt=""></a>
+                        <a href=""><img src="./images/icons/Facebook.png" alt=""></a>
+                        <a href=""><img src="./images/icons/PlayStation.png" alt=""></a>
+                        <a href=""><img src="./images/icons/TwitterX.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-background">
+            <div class="footer-content">
+                <div class="marca">
+                    <h1>Ivone</h1>
+                </div>
+                <div class="footer-navegacao">
+                    <div class="titulo">
+                        <h3>NAVEGACAO</h3>
+                    </div>
+                    <div class="opcoes">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Beleza</a></li>
+                            <li><a href="">SkinCare</a></li>
+                            <li><a href="">Séruns</a></li>
+                            <li><a href="">Todos os produtos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-blog">
+                    <div class="titulo">
+                        <h3>NOSSO BLOG</h3>
+                    </div>
+                    <div class="opcoes">
+                        <ul>
+                            <li><a href="">Recentes</a></li>
+                            <li><a href="">Sobre nós</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-contato">
+                    <div class="titulo">
+                        <h3>CONTATO</h3>
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li>ivone@gmail.com</li>
+                            <li>+55 19 1234567890</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2024 Copyright, Emilly Rodrigues de Mello</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivone</title>
+    <!-- Link para o ícone do site -->
+    <link rel="icon" href="">
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script type="module" src="./scripts/product.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- Barra de itens de busca -->
+        <section class="search-items-bar">
+            <!-- Logotipo -->
+            <div class="logo"><a href="index.html">Ivone</a></div>
+            <!-- Barra de busca -->
+            <div class="search-bar">
+                <div class="icon-search">
+                    <!-- Ícone de busca -->
+                    <a href=""><img src="./images/icons/search_icon.png" alt="Ícone de busca"></a>
+                    <!-- Campo de entrada de texto para busca -->
+                    <input type="text" placeholder="O que você está procurando?">
+                </div>
+            </div>
+            <!-- Link para a seção "Sobre nós" -->
+            <div class="nav-blog">
+                <a href="sobre.html"><h4>Sobre nós</h4></a>
+            </div>
+            <!-- Ícones de navegação (curtida, carrinho, etc.) -->
+            <div class="nav-itens">
+                <div class="like">
+                    <a href=""><img src="./images/icons/like.svg" alt="Ícone de curtida"></a>
+                </div>
+                <div class="carri-icon">
+                    <a href="./produtos-carrinho.html"><img src="./images/icons/Vector.png" alt="Ícone do carrinho"></a>
+                </div>
+                <div class="botao-carrinho">
+                    <!-- Número de itens no carrinho -->
+                    <p class="num-carrinho">9+</p>
+                </div>
+            </div>
+            <!-- Botão de login -->
+            <div class="login">
+                <a href="#" class="login-btn">LOGIN</a>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- REDIRECIONAMENTO DE PÁGINAS -->
+        <div class="redirecionar">
+            <!-- Links para as páginas -->
+            <h5><a href="index.html">HOME</a></h5>
+            <!-- Ícone de seta -->
+            <img src="./images/icons/arrw.png" alt="">
+            <h5><a href="./produtos.html">Todos os Produtos</a></h5>
+            <!-- Ícone de seta -->
+            <img src="./images/icons/arrw.png" alt="">
+            <h5>Produto</h5>
+        </div>
+
+        <!-- PRODUTO INFORMAÇÕES/PREÇO/FRETE -->
+        <section class="produto-conteiner">
+            <div class="produto">
+                <div class="imagens">
+                    <!-- Imagens do produto -->
+                    <img src="./images/prod1.png" alt="">
+                    <img src="./images/prod1.png" alt="">
+                    <img src="./images/prod1.png" alt="">
+                </div>
+                <!-- Imagem principal do produto -->
+                <img src="./images/prod1.png" class="main-image" alt="">
+                <div class="info-produto">
+                    <h1>Blond Absolu Cicaplasme Sérum Capilar</h1>
+                    <p>Cod. 12345678</p>
+                    <h2>R$ 80, 90</h2>
+                    <div class="btn-produto">
+                        <div class="dropdown">
+                            <!-- Botão de dropdown para selecionar a quantidade -->
+                            <button class="dropbtn" id="dropdownButton">1 &#x25BC;</button>
+                            <div class="dropdown-content" id="dropdownContent">
+                                <!-- Opções de quantidade -->
+                                <a href="#">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                            </div>
+                        </div>
+                        <!-- Botão para adicionar ao carrinho -->
+                        <div class="add-carrinho">
+                            <a href="produtos-carrinho.html">
+                                <button class="btn-add">Adicionar ao carrinho
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Campo de entrada de texto para o cálculo do frete -->
+                    <div class="frete-produto">
+                        <p>Cálculo de Frete</p>
+                        <input type="text" name="" id="" class="frete" placeholder="Digite seu CEP aqui...">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Descrição do produto -->
+    </main>
+    <footer>
+        <div class="social-all">
+            <div class="social">
+                <div class="social-container">
+                    <p>Veja nossas redes sociais para ter promoções e atualizações: </p>
+                    <div class="social-icons">
+                        <a href=""><img src="./images/icons/Instagram.png" alt=""></a>
+                        <a href=""><img src="./images/icons/Facebook.png" alt=""></a>
+                        <a href=""><img src="./images/icons/PlayStation.png" alt=""></a>
+                        <a href=""><img src="./images/icons/TwitterX.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-background">
+            <div class="footer-content">
+                <div class="marca">
+                    <h1>Ivone</h1>
+                </div>
+                <div class="footer-navegacao">
+                    <div class="titulo">
+                        <h3>NAVEGACAO</h3>
+                    </div>
+                    <div class="opcoes">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Beleza</a></li>
+                            <li><a href="">SkinCare</a></li>
+                            <li><a href="">Séruns</a></li>
+                            <li><a href="">Todos os produtos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-blog">
+                    <div class="titulo">
+                        <h3>NOSSO BLOG</h3>
+                    </div>
+                    <div class="opcoes">
+                        <ul>
+                            <li><a href="">Recentes</a></li>
+                            <li><a href="">Sobre nós</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-contato">
+                    <div class="titulo">
+                        <h3>CONTATO</h3>
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li>ivone@gmail.com</li>
+                            <li>+55 19 1234567890</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2024 Copyright, Emilly Rodrigues de Mello</p>
+        </div>
+    </footer>
+    <script src="./scripts/produto.js"></script>
+</body>
+</html>
