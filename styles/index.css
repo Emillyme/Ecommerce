@@ -92,6 +92,102 @@ header, main {
     display: none; 
 }
 
+
+
+/* Estilo do conteúdo principal */
+main {
+    padding: 30px;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: block;
+}
+
+.mais-vendidos, .em-promocao, .novidades {
+    margin-bottom: 100px;
+}
+
+.novidades h1, .mais-vendidos h1, .em-promocao h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-right: auto;
+}
+
+/* Responsividade para seções de produtos */
+.produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Controla o espaçamento entre os itens */
+    width: 100%; /* Garante que o contêiner ocupe toda a largura */
+    max-width: 1300px; /* Limite opcional para a largura total */
+    margin: 0 auto; /* Centraliza o contêiner */
+}
+
+.produtos .product {
+    flex: 1 1 calc(25% - 10px); /* 4 itens por linha */
+    max-width: calc(25% - 10px); /* Limite adicional */
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mais-vendidos .titulo-prod p{
+    color: white;
+    -webkit-text-stroke: 1.5px #7B9E1A; 
+    -webkit-text-fill-color: transparent; 
+}
+
+.img-prod img {
+    width: 230px; /* A imagem ocupa toda a largura do contêiner */
+    height: auto; /* Mantém a proporção */
+    display: block;
+}
+
+.nome-prod p {
+    max-width: 80%;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+    word-break: break-word;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 10px 0px 10px 16px;
+    color: #000;
+}
+
+.nome-prod p:hover {
+    color: #669407;
+}
+
+.nome-prod span{
+    font-size: 12px;
+    text-align: left;
+    padding: 33px 20px;
+}
+
+.preco-prod p{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    padding: 20px 0px 0px 15px;
+    color: #251F2B;
+}
+
+.preco-prod span{
+    font-size: 12px;
+    text-align: left;
+    padding: 20px 0px 0px 15px;
+    color: #251F2B;
+}
+
+.em-promocao .titulo-prod p{
+    color: white;
+    -webkit-text-stroke: 1.5px #7B9E1A; 
+    -webkit-text-fill-color: transparent; 
+}
+
 /* Exibe o menu hambúrguer apenas em telas menores */
 @media (max-width: 768px) {
     .menu-toggle {
@@ -149,5 +245,23 @@ header, main {
     .header-navbar ul {
         flex-direction: column;
         gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-prod img{
+        width: 300px;
+    }
+
+    .produtos .product {
+        flex: 1 1 calc(50% - 10px); /* 2 itens por linha */
+        max-width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .produtos .product {
+        flex: 1 1 100%; /* 1 item por linha */
+        max-width: 100%;
     }
 }
