@@ -188,6 +188,137 @@ main {
     -webkit-text-fill-color: transparent; 
 }
 
+
+/* FOOTER */
+/* Estilo do rodapé */
+.footer-background {
+    background-color: #251F2B;
+    padding: 90px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Ajuste de largura para ser responsivo */
+    max-width: 1313px;
+    flex-wrap: wrap; /* Permite que os itens se alinhem em colunas em telas pequenas */
+}
+
+.marca h1{
+    font-family: 'Pecita', sans-serif;
+    font-size: 45px;
+    font-weight: 100;
+}
+
+.footer-content .titulo {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.opcoes ul li a{
+    color: #999999;
+}
+
+.opcoes ul li{
+    margin-top: 5px;
+}
+
+.opcoes ul li a:hover{
+    color: #ffff;
+}
+
+.info ul li{
+    color: #999999;
+}
+.footer-content .marca {
+    color: #fff;
+    flex: 1 1 100%; /* Faz com que o título ocupe toda a linha em telas pequenas */
+}
+
+.footer-content a {
+    color: aliceblue;
+}
+
+.footer-content .footer-navegacao,
+.footer-content .footer-blog,
+.footer-content .footer-contato {
+    flex: 1 1 30%; /* Cada seção ocupará 30% da largura, mas pode reduzir em telas menores */
+    margin-bottom: 30px;
+}
+
+.footer-content .titulo{
+    margin-bottom: 20px;
+}
+.copyright{
+    background-color: black;
+    padding: 20px;
+}
+
+.copyright p{
+    color: rgb(146, 146, 146);
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para dispositivos com tela menor */
+@media (max-width: 768px) {
+    .footer-content .footer-navegacao,
+    .footer-content .footer-blog,
+    .footer-content .footer-contato {
+        flex: 1 1 100%; 
+    }
+
+    .footer-background {
+        padding: 50px 20px; /* Reduzir o padding do footer em telas menores */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-content {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .footer-content{
+        font-size: 24px; /* Reduzir o tamanho da marca */
+        text-align: center;
+    }
+
+    .footer-content .titulo h3 {
+        font-size: 18px; /* Ajustar o tamanho dos títulos */
+    }
+
+    .copyright p {
+        font-size: 14px; /* Ajuste de tamanho do texto no copyright */
+        text-align: center; /* Centralizar o texto */
+        margin-top: 20px; /* Espaço acima do texto */
+    }
+
+    .footer-contato ul li {
+        font-size: 14px; 
+    }
+}
+
+/* Para telas muito pequenas (como smartphones com tela muito pequena) */
+@media (max-width: 480px) {
+
+    .footer-content .marca h1 {
+        font-size: 20px; /* Reduz o tamanho da marca ainda mais */
+    }
+
+    .footer-content .titulo h3 {
+        font-size: 16px; /* Ajuste do tamanho do título */
+    }
+
+    .footer-content a {
+        font-size: 14px; /* Ajuste do tamanho da fonte dos links */
+    }
+}
+
 /* Exibe o menu hambúrguer apenas em telas menores */
 @media (max-width: 768px) {
     .menu-toggle {
