@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/pecita');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url(./produtos.css);
 
 * {
     margin: 0;
@@ -103,6 +104,38 @@ main {
     display: block;
 }
 
+.hero-banner {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 auto;
+    align-items: center;
+    margin-bottom: 100px;
+    flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 20px; /* Espaço entre os anúncios */
+}
+
+.anuncio-r, .anuncio {
+    flex: 1; /* Cada anúncio ocupa espaço igual */
+    display: flex;
+    justify-content: center;
+}
+
+.anuncio-r img, .anuncio img {
+    max-width: 100%; /* Garante que as imagens sejam responsivas */
+    height: auto; /* Mantém a proporção */
+    border-radius: 8px; /* Estilo opcional */
+}
+
 .mais-vendidos, .em-promocao, .novidades {
     margin-bottom: 100px;
 }
@@ -111,6 +144,40 @@ main {
     font-size: 36px;
     margin-bottom: 20px;
     margin-right: auto;
+}
+
+.novidades .noticias {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Garante alinhamento correto */
+    gap: 20px;
+    flex-wrap: nowrap; /* Fora da responsividade, mantém os itens em linha */
+    margin-top: 20px;
+}
+
+.new1, .new2, .new3 {
+    flex: 1 1 calc(33.33% - 20px); /* Cada notificação ocupa 1/3 da largura */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.new3 .texto-notificacao {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.new3 p.titulo-new {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.new3 p.descricao {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
 }
 
 /* Responsividade para seções de produtos */
@@ -131,6 +198,7 @@ main {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 }
 
 .mais-vendidos .titulo-prod p{
@@ -188,6 +256,44 @@ main {
     -webkit-text-fill-color: transparent; 
 }
 
+.container-produtos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Hover para Novidades */
+.novidades .noticias .new1:hover, 
+.novidades .noticias .new2:hover, 
+.novidades .noticias .new3:hover {
+    transform: translateY(-10px); /* Eleva a novidade levemente */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.007); /* Adiciona sombra mais intensa */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição suave */
+}
+
+/* Hover para Banners */
+.banner img:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do banner */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.007); /* Adiciona sombra mais intensa */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição suave */
+}
 
 /* FOOTER */
 /* Estilo do rodapé */
@@ -264,8 +370,24 @@ main {
     justify-content: center;
 }
 
+
+
 /* Estilos para dispositivos com tela menor */
 @media (max-width: 768px) {
+    .hero-banner {
+        flex-direction: column; /* Alinha os itens em coluna */
+        gap: 15px; /* Ajuste do espaçamento */
+    }
+
+    .container-header {
+        flex-direction: column; /* Cada item ocupa uma linha */
+        gap: 15px;
+    }
+
+    .anuncio-r img, .anuncio img {
+        max-width: 90%; /* Reduz o tamanho das imagens em tablets */
+    }
+    
     .footer-content .footer-navegacao,
     .footer-content .footer-blog,
     .footer-content .footer-contato {
@@ -305,6 +427,16 @@ main {
 
 /* Para telas muito pequenas (como smartphones com tela muito pequena) */
 @media (max-width: 480px) {
+
+    .hero-banner {
+        margin-bottom: 50px; /* Reduz o espaço abaixo */
+        padding: 0 10px; /* Adiciona margens laterais */
+    }
+
+    .anuncio-r img, .anuncio img {
+        max-width: 100%; /* Ocupa toda a largura disponível */
+        height: auto; /* Mantém a proporção */
+    }
 
     .footer-content .marca h1 {
         font-size: 20px; /* Reduz o tamanho da marca ainda mais */
@@ -380,8 +512,28 @@ main {
 }
 
 @media (max-width: 768px) {
+
+    .novidades .noticias {
+        flex-wrap: wrap; /* Permite os itens quebrarem para novas linhas */
+        gap: 15px;
+    }
+
+    .new1, .new2, .new3 {
+        flex: 1 1 calc(50% - 15px); /* Ocupa 50% da largura em tablets */
+    }
+
+    .new2{
+        width: 100%;
+        border-radius: 40px;
+        content: url("../images/new2-mobile.png");
+    }
+
     .img-prod img{
         width: 300px;
+    }
+
+    .banner img {
+        content: url("../images/banner1-mobile.png"); /* Substitua pelo caminho da imagem menor */
     }
 
     .produtos .product {
@@ -391,6 +543,21 @@ main {
 }
 
 @media (max-width: 480px) {
+
+    .novidades .noticias {
+        flex-direction: column; /* Em telas pequenas, organiza em coluna */
+        gap: 10px;
+    }
+
+    .new1, .new2, .new3 {
+        flex: 1 1 100%; /* Cada item ocupa 100% da largura */
+        margin-bottom: 15px;
+    }
+
+    .new3 .texto-notificacao {
+        text-align: left; /* Ajuste opcional para melhor leitura */
+        margin-top: 5px;
+    }
     .produtos .product {
         flex: 1 1 100%; /* 1 item por linha */
         max-width: 100%;
